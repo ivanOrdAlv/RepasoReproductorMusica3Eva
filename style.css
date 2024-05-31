@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.player {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.details {
+  margin-bottom: 20px;
+}
+
+.track-name, .track-artist {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+.slider_container {
+  margin-bottom: 20px;
+}
+
+
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons div {
+  margin: 0 10px;
+}
+
+.buttons i {
+  font-size: 24px;
+  color: #333333;
+  cursor: pointer;
+}
+
+#wave {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.stroke {
+  display: inline-block;
+  width: 6px;
+  height: 25px;
+  background-color: #333333;
+  margin: 0 2px;
+  animation: wave 1.5s infinite ease-in-out;
+}
+
+@keyframes wave {
+  0%,20%, 40%,60%,80%, 100% {
+      height: 25px;
+  }
+  20% {
+      height: 40px;
+  }
+  40% {
+      height: 60px;
+  }
+  60% {
+      height: 40px;
+  }
+  80% {
+      height: 25px;
+  }
+}
